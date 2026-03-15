@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-0.1.0-orange)
-![CI](https://github.com/shantanushastri/medihunt/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/shaan3000/medihunt/actions/workflows/ci.yml/badge.svg)
 
 > A passive CLI tool that analyzes network traffic for healthcare-specific protocol vulnerabilities, PHI leakage, and medical device anomalies. No packets sent. No active scanning.
 
@@ -45,7 +45,7 @@ No existing open source tool combines all of these in a single, pentest-ready CL
 **Requirements:** Python 3.8+, pip, root/sudo for live capture
 
 ```bash
-git clone https://github.com/shantanushastri/medihunt.git
+git clone https://github.com/shaan3000/medihunt.git
 cd medihunt
 pip install -r requirements.txt
 ```
