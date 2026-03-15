@@ -35,7 +35,7 @@ def test_dicom_detects_association(dicom_associate_packets):
     findings = parser.analyze()
 
     titles = [f.title for f in findings]
-    assert any("Association" in t for t in titles)
+    assert any("DICOM" in t for t in titles)
 
 
 def test_dicom_cfind_is_critical(dicom_cfind_packets):

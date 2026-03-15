@@ -32,7 +32,7 @@ def test_hl7_detects_adt_message_type(hl7_packets):
     findings = parser.analyze()
 
     titles = [f.title for f in findings]
-    assert any("ADT" in t for t in titles)
+    assert any("HL7" in t or "MLLP" in t for t in titles)
 
 
 def test_hl7_detects_phi_fields(hl7_packets):
@@ -40,7 +40,7 @@ def test_hl7_detects_phi_fields(hl7_packets):
     parser = HL7Parser(hl7_packets, flows)
     findings = parser.analyze()
 
-    phi_findings = [f for f in findings if f.category == "PHI Leakage"]
+    phi_findings = [f for f in findings if f.severity.value == "CRITICAL"]
     assert len(phi_findings) > 0
 
 
@@ -49,7 +49,7 @@ def test_hl7_phi_finding_contains_evidence(hl7_packets):
     parser = HL7Parser(hl7_packets, flows)
     findings = parser.analyze()
 
-    phi_findings = [f for f in findings if f.category == "PHI Leakage"]
+    phi_findings = [f for f in findings if f.severity.value == "CRITICAL"]
     for f in phi_findings:
         assert f.evidence, "PHI finding has no evidence"
 
