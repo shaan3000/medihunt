@@ -15,18 +15,14 @@ Thank you for your interest in contributing. DicomGhost is a security research t
 ## Ways to Contribute
 
 ### Report a Bug
-Use the [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md) issue template.
-
-Include:
+Open a [GitHub Issue](../../issues/new) and include:
 - Your OS and Python version
 - The command you ran
 - What you expected vs what happened
 - Any error output (redact any sensitive data)
 
 ### Request a Feature
-Use the [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md) template.
-
-Good feature requests include:
+Open a [GitHub Issue](../../issues/new) and include:
 - The protocol or attack scenario you want covered
 - Why it's relevant to medical device security
 - Any references (RFCs, vendor docs, CVEs)

@@ -14,7 +14,7 @@ If you discover a security vulnerability **in DicomGhost itself** (not in the me
 
 Instead, report it privately:
 
-**Email:** security@[your-domain].com  
+**Email:** shantanu@dicomghost.dev  
 **Subject line:** `[DicomGhost] Security Vulnerability Report`
 
 Please include:
@@ -23,7 +23,7 @@ Please include:
 - Potential impact
 - Any suggested fix (optional)
 
-You will receive a response within **72 hours**. If the vulnerability is confirmed, a fix will be released as soon as possible and you will be credited in the changelog (unless you prefer to remain anonymous).
+You will receive a response within **7 days**. If the vulnerability is confirmed, a fix will be released as soon as possible and you will be credited in the changelog (unless you prefer to remain anonymous).
 
 ---
 

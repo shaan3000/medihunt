@@ -73,13 +73,15 @@ python dicomghost.py --pcap capture.pcap --verbose
 ## Sample Output
 
 ```
-  __  __          _ _   _   _             _
- |  \/  | ___  __| (_) | | | |_   _ _ __ | |_
- | |\/| |/ _ \/ _` | | | |_| | | | | '_ \| __|
- | |  | |  __/ (_| | | |  _  | |_| | | | | |_
- |_|  |_|\___|\__,_|_| |_| |_|\__,_|_| |_|\__|
-
-  Medical Device Network Recon Tool
+       ___                            __               __ 
+  ____/ (_)________  ____ ___  ____ _/ /_  ____  _____/ /_
+ / __  / / ___/ __ \/ __ `__ \/ __ `/ __ \/ __ \/ ___/ __/
+/ /_/ / / /__/ /_/ / / / / / / /_/ / / / / /_/ (__  ) /_  
+\__,_/_/\___/\____/_/ /_/ /_/\__, /_/ /_/\____/____/\__/  
+                            /____/                        
+  DICOM Medical Device Network Recon Tool
+  Author: Shantanu Shastri
+  For authorized security assessments only.
 
 ──────────────────────────────────────────────────────────────────────
   DicomGhost Scan Report  |  2024-11-01 14:23:11
@@ -110,7 +112,7 @@ Findings:
   Fix:      Restrict C-FIND access. Enable TLS. Log all C-FIND queries.
 ```
 
-See [examples/example_output.json](examples/example_output.json) for full JSON output.
+See the `--output json` flag to generate full JSON output.
 
 ---
 
@@ -140,10 +142,11 @@ Useful for CI/CD integration or automated assessment pipelines.
 
 ## Documentation
 
-- [Usage Guide](docs/usage.md) — detailed CLI usage and assessment workflow
-- [Protocol Reference](docs/protocols.md) — DICOM, HL7, FHIR technical details
-- [Contributing](CONTRIBUTING.md) — how to add parsers or report bugs
+- [Contributing](CONTRIBUTING.md) — how to add parsers or report bugs  
 - [Security Policy](SECURITY.md) — responsible disclosure
+- [Changelog](CHANGELOG.md) — version history
+
+> 📄 Full usage guide and protocol reference docs coming soon.
 
 ---
 
